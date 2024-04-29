@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>
+    {% block title %}
+    {% endblock %}
+  </title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="http://127.0.0.1:8000/home">Home</a></li>
+  <li><a href="http://127.0.0.1:8000/about">About</a></li>
+  <li><a href="http://127.0.0.1:8000/categorise/">Categories</a></li>
+  <!-- <li><a href="http://127.0.0.1:8000/gallery">Gallery</a></li>
+   <li><a href="http://127.0.0.1:8000/meetingandevents">Meeting and Events</a></li>
+   <li><a href="http://127.0.0.1:8000/recreation">Recreation</a></li>
+   <li><a href="http://127.0.0.1:8000/restaurant">Restaurant</a></li>
+   <li><a href="http://127.0.0.1:8000/accomodation">Accomodation</a></li>
+    <li><a href="http://127.0.0.1:8000/view">View</a></li>
+    <li><a href="http://127.0.0.1:8000/free">Free</a></li> -->
+</ul>
+{% block content %}
+    {% endblock %}
+
+</body>
+</html>
